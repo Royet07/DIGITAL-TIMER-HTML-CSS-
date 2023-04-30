@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIGITAL TIMER</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<style>
+    *{
+    font-family: myFirstFont;
+    src: url(./fonts/digital-7.ttf);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./fonts/digital-7.ttf);
+}
+
+body{
+    box-sizing: border-box;
+    padding: 140px 50px 140px 50px;
+}
+
+#container{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.divq{
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    margin: 0 2.8rem 0 2.8rem;
+    justify-content: space-between;
+}
+.div1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 7.5rem;
+}
+.f_con{
+    display: block;
+    justify-content: space-between;
+    margin: 0;
+    margin-left: 5px;
+    width: 2.5rem;
+    height: 100%;
+}
+.f_conq{
+    display: block;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+    margin-left: 5px;
+    width: 16rem;
+    height: 100%;
+}
+
+.f_conq span{
+    font-size: 90pt;
+    color: red;
+}
+
+.f_con1{
+    display: inline-block;
+    justify-content: space-between;
+    margin: 0;
+    text-align: center;
+    margin-left: 5px;
+    width: 10rem;
+    height: 100%;
+}
+
+.f_con1 span{
+    font-size: 94pt;
+    color: yellow;
+}
+
+.f_con1s{
+    display: block;
+    margin: 0;
+    text-align: center;
+    margin-left: 5px;
+    width: 10rem;
+    height: 100%;
+}
+.f_con1s .divs{
+    width: 100%;
+    height: 4.5rem;;
+    font-size: 56pt;
+    color: red;
+}
+.f_con1s .divs1{
+    width: 100%;
+    height: 2rem;;
+    font-size: 30pt;
+    color: rgb(212, 31, 100);
+}
+
+#con_bot{
+    height: 2rem;
+    max-width: 97.4%;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+#con_bot1{
+    height: 2rem;
+    height: 74%;
+    max-width: 97.4%;
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.b_first{
+    height: 2rem;
+    width: fit-content;
+    font-size: 18pt;
+    text-align: center;
+    color: red;
+}
+.b_second{
+    height: 100%;
+    width: 5rem;
+    font-size: 67pt;
+    text-align: center;
+    color:rgb(26, 219, 8);
+}
+.childq{
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+.childq span{
+    font-size: 20pt;
+}
+</style>
+<body>
+
+<!-- SECTION START -->
+<section id="container">
+    <div class="divq">
+        <div class="f_conq">
+            <div class="childq" style="margin-top: 2rem;">
+                <span>ILONGGO</span>
+            </div>
+            <div class="childq">
+                <span>BROTHERS 1</span>
+            </div>
+        </div>
+        <div class="f_conq">
+            <span>10:00</span>
+        </div>
+        <div class="f_conq">
+            <div class="childq" style="margin-top: 2rem;">
+                <span>QATIF</span>
+            </div>
+            <div class="childq">
+                <span>WOLVES</span>
+            </div>
+        </div>
+    </div>  
+    <div class="div1">
+        <div style="display: flex; margin-left: 3rem;">
+            <div class="f_con">
+                <div style="color: red; height: fit-content; text-align: center; width: 100%; margin-bottom: 1rem; margin-top: 0.85rem; font-size: 16pt;">
+                    + 1
+                </div>
+                <div style="color: red; height: fit-content; text-align: center; margin-bottom: 1rem; font-size: 16pt;">
+                    + 3
+                </div>
+                <div style="color: red; height: fit-content; text-align: center; font-size: 16pt;">
+                    - 1
+                </div>
+            </div>
+            <div class="f_con1">
+                <span>35</span>
+            </div>
+        </div>
+        <div style="display: flex; margin-left: 16rem;">
+            <div class="f_con1s">
+                <div class="divs">24</div>
+                <span class="divs1">14</span>
+            </div>
+        </div>
+        <div style="display: flex; margin-left: 12rem;">
+            <div class="f_con1">
+                <span>52</span>
+            </div>
+            <div class="f_con">
+                <div style="color: red; height: fit-content; text-align: center; width: 100%; margin-bottom: 1rem; margin-top: 0.85rem; font-size: 16pt;">
+                    + 1
+                </div>
+                <div style="color: red; height: fit-content; text-align: center; margin-bottom: 1rem; font-size: 16pt;">
+                    + 3
+                </div>
+                <div style="color: red; height: fit-content; text-align: center; font-size: 16pt;">
+                    - 1
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="div" style="display: block;">
+        <div id="con_bot">
+            <div class="b_first">
+                TIMEOUTS
+            </div>
+            <div class="b_first">
+                FOULS
+            </div>
+            <div class="b_first">
+                PERIOD
+            </div>
+            <div class="b_first">
+                FOULS
+            </div>
+            <div class="b_first">
+                TIMEOUTS
+            </div>
+        </div>
+        <div id="con_bot1">
+            <div class="b_second" style="margin-left: 0.4rem;">
+                0
+            </div>
+            <div class="b_second" style="margin-left: 0.5rem;">
+               0
+            </div>
+            <div class="b_second" style="margin-left: -0.4rem;">
+                3
+            </div>
+            <div class="b_second" style="margin-right: 0.2rem;">
+                0
+            </div>
+            <div class="b_second" style="margin-right: 0.7rem;">
+                0
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
